@@ -1,0 +1,85 @@
+/* Container Styles */
+.container {
+  text-align: center;
+  /* background-color: #fdfcf6;  */
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Title and Subtitle */
+.title {
+  font-size: 2rem;
+  color: #21425b;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #5a5a5a;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Achievements Grid */
+.achievements {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual Achievement Card */
+.achievement {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Icon Styling */
+.iconWrapper {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1rem;
+  background-color: #e4f3e2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 60%;
+  height: 60%;
+}
+
+/* Value and Label */
+.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #21425b;
+  margin: 0.5rem 0;
+}
+
+.label {
+  font-size: 0.875rem;
+  color: #5a5a5a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .achievements {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+}

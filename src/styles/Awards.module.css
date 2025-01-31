@@ -1,0 +1,73 @@
+/* General Container */
+.container {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Section Titles */
+.title {
+  font-size: 2.5rem;
+  color: #21425b;
+  margin-bottom: 1.5rem;
+}
+
+/* Awards Section */
+.awardsSection {
+  margin-bottom: 3rem;
+  background-color: #fdfcf6;
+}
+
+.awards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.award {
+  width: 200px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 150px;
+  margin: 0 auto 1rem;
+}
+
+.award p {
+  font-size: 1rem;
+  color: #5a5a5a;
+  margin: 0;
+}
+
+/* Investors Section */
+.investorsSection {
+  margin-top: 3rem;
+  background-color: white;
+}
+
+.investors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.investorLogo {
+  max-width: 150px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .awards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .investors {
+    flex-direction: column;
+  }
+  .investorLogo {
+    margin: 0 auto 1rem;
+  }
+}

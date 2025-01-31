@@ -1,0 +1,174 @@
+/* General Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #faf2cf;
+  font-family: 'Arial', sans-serif;
+  padding: 1rem 8%;
+}
+
+/* Main Content */
+.mainContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Left Section */
+.leftSection {
+  flex: 1;
+  min-width: 300px;
+  padding: 2rem 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  color: #8c684e;
+  font-weight: bold;
+  text-align: center;
+}
+
+.scarecrowContainer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.scarecrowImage {
+  max-width: 300%;
+  height: auto;
+}
+
+/* Navbar Section */
+.navbar {
+  flex: 1;
+  min-width: 300px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navLinks {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.navLinks li {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.navLinks li:hover {
+  text-decoration: underline;
+}
+
+/* Right Section */
+.rightSection {
+  flex: 1;
+  min-width: 300px;
+  padding: 2rem 1rem;
+}
+
+.contactTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5a3b25;
+  text-align: center;
+}
+
+.contactText {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #5c554d;
+  text-align: center;
+}
+
+.contactDetails {
+  margin-top: 1rem;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #453d36;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.8rem;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+.licenseInfo {
+  margin-bottom: 0.8rem;
+}
+
+.disclaimer {
+  line-height: 1.4;
+}
+
+.disclaimer a {
+  text-decoration: underline;
+  color: #8c684e;
+}
+
+.copyright {
+  margin-top: 0.8rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scarecrowImage {
+    max-width: 100%;
+    height: auto;
+  }
+  .leftSection,
+  .navbar,
+  .rightSection {
+    text-align: center;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navLinks li {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .contactTitle {
+    font-size: 1.2rem;
+  }
+}

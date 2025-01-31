@@ -1,0 +1,80 @@
+/* Main container */
+.container {
+  display: flex;
+  align-items: center; /* Vertically align content and icons */
+  justify-content: space-between; /* Left and right spacing */
+  padding: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  gap: 2rem; /* Space between left content and right icons */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Left Content Section */
+.leftContent {
+  flex: 1; /* Take full space when on smaller screens */
+  max-width: 50%; /* Restrict size on larger screens */
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Right Icons Section */
+.rightIcons {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping in smaller screens */
+  justify-content: flex-start; /* Align icons left */
+  gap: 1.5rem; /* Space between icons */
+  flex: 1; /* Adjust size based on container space */
+  max-width: 50%; /* Restrict size on larger screens */
+}
+
+.pillar {
+  display: flex;
+  flex-direction: column; /* Icon and text stacked */
+  align-items: center; /* Center items */
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.pillarText {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #d87e3f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack top-to-bottom */
+    align-items: center;
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .leftContent,
+  .rightIcons {
+    max-width: 100%; /* Full width for smaller screens */
+    text-align: center; /* Center align content */
+  }
+
+  .rightIcons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
